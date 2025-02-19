@@ -1,0 +1,26 @@
+padre_de(homero, bart). 
+padre_de(homero, lisa). 
+padre_de(homero, maggie).
+
+padre_de(abraham, homero). 
+padre_de(abraham, herbert). 
+
+padre_de(clancy, marge). 
+padre_de(clancy, patty). 
+padre_de(clancy, selma). 
+
+madre_de(marge, bart). 
+madre_de(marge, lisa). 
+madre_de(marge, maggie). 
+
+madre_de(jacqueline, marge). 
+madre_de(jacqueline, patty). 
+madre_de(jacqueline, selma). 
+
+madre_de(selma, ling). 
+
+madre_de(mona, homero).
+
+abuelo_de(X, Y) :- padre_de(X,Z), (padre_de(Z,Y); madre_de(Z,Y)).
+abuela_de(X, Y) :- madre_de(X,Z), (padre_de(Z,Y); madre_de(Z,Y)).
+
