@@ -1,3 +1,3 @@
 enemigo_de(coreaDelSur, estadosUnidos).
-estadounidense(cWest);
-tiene_misiles(CoreaDelSur);
+estadounidense(cWest).
+vendio_misiles(cWest, coreaDelSur).
